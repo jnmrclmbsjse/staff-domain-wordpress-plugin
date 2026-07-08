@@ -1,0 +1,19 @@
+{
+  "name": "staff-domain-wordpress-plugin",
+  "description": "This is for Staff Domain - Task A - WordPress Custom Plugin",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "jnmrclmbsjse",
+      "email": "jnmrclmbsjse@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "StaffDomainWordpressPlugin": "src/"
+    }
+  },
+  "require": {
+  }
+}
