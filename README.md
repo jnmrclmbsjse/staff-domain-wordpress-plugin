@@ -26,4 +26,6 @@ work for you) that:
 6. Visit `http://localhost:{PORT_IN_ENV}` in your browser
 7. Configure the WordPress site.
 8. Go to Plugins > Installed Plugins > Staff Domain - WordPress Custom Plugin and click Activate.
-> Todo: Next steps once the core is ready
+9. On the left menu, there will be a Staff Domain menu, click it.
+10. You will get redirected to the settings page. Paste your API key from https://api.nasa.gov/ and hit save.
+11. Go to the actual website e.g (localhost:8080), on the title part of the content you will see the APOD from NASA.
