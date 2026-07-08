@@ -23,25 +23,33 @@ if (!defined('WPINC')) {
     die;
 }
 
+include_once __DIR__.'/autoload.php';
+
+use StaffDomainWordpressPlugin\Activator;
+use StaffDomainWordpressPlugin\Core;
+use StaffDomainWordpressPlugin\Deactivator;
+
 /**
  * Currently plugin version.
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define('PLUGIN_NAME_VERSION', '1.0.0');
+const STAFF_DOMAIN_WORDPRESS_PLUGIN_VERSION = '1.0.0';
 
 /**
  * The code that runs during plugin activation.
  */
 function activate_staff_domain_wordpress_plugin() {
-    // TODO: Activator here
+    $activator = new Activator();
+    $activator->run();
 }
 
 /**
  * The code that runs during plugin deactivation.
  */
 function deactivate_staff_domain_wordpress_plugin() {
-    // TODO: Deactivator here
+    $deactivator = new Deactivator();
+    $deactivator->run();
 }
 
 register_activation_hook(__FILE__, 'activate_staff_domain_wordpress_plugin');
@@ -58,9 +66,8 @@ register_deactivation_hook(__FILE__, 'deactivate_staff_domain_wordpress_plugin')
  * @since    1.0.0
  */
 function staff_domain_wordpress_plugin_run() {
-
-    // TODO: Plugin runner here
-
+    $plugin = new Core();
+    $plugin->run();
 }
 
 staff_domain_wordpress_plugin_run();
