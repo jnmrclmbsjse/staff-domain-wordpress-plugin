@@ -10,7 +10,7 @@ work for you) that:
    using that setting.
 3. Exposes the fetched result on the front end.
 
-> Note from Junmar: This task I will finish via traditional development (Not AI-assisted)
+> Note from Junmar: This task I built by hand (traditional development and not AI-assisted)
 
 ### How to run to project and review it
 #### Requirements

@@ -7,4 +7,6 @@ interface PageInterface
     public function getSlug(): string;
 
     public function initialize(): void;
+
+    public function renderBody(): void;
 }

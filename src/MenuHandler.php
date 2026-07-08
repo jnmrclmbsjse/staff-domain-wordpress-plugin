@@ -4,7 +4,7 @@ namespace StaffDomainWordpressPlugin;
 
 use StaffDomainWordpressPlugin\Pages\SettingsPage;
 
-class Menu
+class MenuHandler
 {
     public function register(): void
     {
