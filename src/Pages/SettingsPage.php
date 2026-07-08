@@ -2,10 +2,8 @@
 
 namespace StaffDomainWordpressPlugin\Pages;
 
-class SettingsPage implements PageInterface
+class SettingsPage extends AbstractPage
 {
-    public function getSlug(): string
-    {
-        return 'staff-domain-wordpress-plugin-settings';
-    }
+    protected string $slug = 'settings';
+    protected string $title = 'Settings';
 }

@@ -14,7 +14,7 @@ class Menu
             __('Staff Domain'),
             'manage_options',
             $settingsPage->getSlug(),
-            null,
+            [$settingsPage, 'initialize'],
             null,
             '65'
         );
