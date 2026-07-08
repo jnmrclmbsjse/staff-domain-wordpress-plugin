@@ -1,2 +1,8 @@
 # IDE
 .idea
+
+# Composer dependencies
+/vendor/
+
+# Local environment overrides
+.env
